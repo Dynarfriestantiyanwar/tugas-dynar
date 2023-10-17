@@ -8,44 +8,36 @@
 </head>
 <body>
      
-    <h1>Buat Account Baru</h1>
-    <h3>Sign Up Form</h3>
-    <br>
-    <from action="welcome.html" method="get">
-       <label for="fname">First name:</label><br></br>
-       <input type="text" id="fname" name="fname" value=" "><br></br>
-       <label type="lname">Last name :</label><br></br>
-       <input type="text" id="lname" name="lname" value=" ">
-
-    <p>Gender:</p>
-
-    <input type="radio" id="Male" name="gender" value="Male">
-    <label for="Male">Male</label><br>
-    <input type="radio" id="Famale" name="gender" value="Famale">
-    <label for="Famale">Famale</label><br>
-<br>
-
-<label for="nationality">Nationality</label><br><br>
-   <select id="nationality" name="nationality">
-       <option value="Indonesia">Indonesia</option><br>
-       <option value="America">America</option><br>
-       <option value="English">English</option><br>
-   </select><br><br> 
-
-   <p>Language Spoken</p>
-
-    <input type="checkbox" id="language1" name="language1" value="Indonesia">
-    <label for="language1"> Indonesia </label><br>
-    <input type="checkbox" id="language2" name="language2" value="English">
-    <label for="language2"> English </label><br>
-    <input type="checkbox" id="language3" name="language3" value="Other">
-    <label for="language3"> Other </label>
-
-<p>Bio</p>
-<textarea id="bio" name="message" rows="10" cols="30"></textarea>
- <br>
- <input type="submit" value="sign up">
-
+    <form action="welcome.html">
+        <h1>Buat Account Baru</h1>
+        <h2>Sign Up Form</h2>
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" required>
+        <br>
+        <br>
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname"required>
+        <p>Gender :</p>
+        <input type="radio" id="pria" name="gender" required><label for="pria">Male</label>
+        <br>
+        <input type="radio" id="wanita" name="gender" required><label for="wanita">Female</label>
+        <p>Nationality</p>
+            <select name="" id="" >
+                <option value="">Indonesia</option>
+                <option value="">English</option>
+                <option value="">Sunda</option>
+                <option value="">Jawa</option>
+            </select>
+        <p>Language spoken</p>
+        <input type="checkbox" id="indo">
+        <label for="indo">Bahasa Indonesia</label><br>
+        <input type="checkbox" id="inggris">
+        <label for="inggris">English</label><br>
+        <input type="checkbox" id="lainnya">
+        <label for="lainnya">Other</label><br>
+        <p>Bio</p>
+        <textarea name="data" id="data" cols="30" rows="10"></textarea><br>
+        <button type="submit" >Sign Up</a></button>
 </from>
-</body>>
+</body>
 </html>
